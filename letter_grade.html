@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+	
+</head>
+<body>
+    <script>
+		
+    do { 
+        var gPercent = prompt("Enter your Grade Percentage.(0 - 100)");
+        
+        // conversion of grades ... where most of the magic happens
+            
+        if (gPercent > 100 || gPercent < 0 || gPercent=="" || isNaN(gPercent)) {
+            alert("You have made and invalid entry");
+        } else if (gPercent >= 88 && gPercent <= 100) {
+            alert("Grade Percentage: " + gPercent + "%" + "\n You have an A!");
+        } else  if (88 > gPercent && gPercent >= 80) {
+            alert("Grade Percentage: " + gPercent + "%" + "\n You have a B!");
+        } else  if (80 > gPercent && gPercent >= 68) {
+            alert("Grade Percentage: " + gPercent + "%" + "\n You have a C!");
+        } else if (68 > gPercent && gPercent >= 60) {
+            alert("Grade Percentage: " + gPercent + "%" + "\n You have a D!");
+        } else if (gPercent < 60 && gPercent > 0) {
+            alert("Grade Percentage: " + gPercent + "%" + "\n You have a (WT)F!");
+        }  
+    
+        var again = confirm("Would you like to restart?"); //window to initiate restart 
+        
+    //if else statement for the confirm box that allows the "ok" and "cancel" buttons to work respectively 
+    } while (again == true)  { 
+        if (confirm == true) {
+        if (confirm == true) {
+            again = true;
+        } else {
+            again = false;
+        }
+    }
+    }
+    </script>
+<section>
+    <h1>Thank you for using this killer GP conversion app!! YOU ROCK!!!!</h1>
+    <p>unless you have an F, then.... GET IT TOGETHER!!!!!</p>
+</section>
+</body>
+</html>
